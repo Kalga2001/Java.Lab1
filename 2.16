@@ -1,0 +1,15 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+   Scanner input=new Scanner(System.in);
+   System.out.println("Введите первое целое число: ");
+   int x=input.nextInt();
+   System.out.println("Введите второе целое число: ");
+   int y=input.nextInt();
+  if(x>y) System.out.println( x+ " больше " + y);
+  if(y>x) System.out.println( y+ " больше " + x  );
+  if(x==y) System.out.println(x+ " равно "+ y );
+    }
+    }
