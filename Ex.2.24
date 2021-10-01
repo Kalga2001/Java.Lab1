@@ -1,0 +1,43 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static int Sum(int x1, int x2, int x3, int x4, int x5)
+    {
+        return x1+x2+x3+x4+x5;
+    }
+    public static void main(String[] args) {
+   Scanner input=new Scanner(System.in);
+   System.out.println("Введите первое целое число: ");
+   int x1=input.nextInt();
+   System.out.println("Введите второе целое число: ");
+   int x2=input.nextInt();
+   System.out.println("Введите третье целое число: ");
+   int x3=input.nextInt();
+   System.out.println("Введите четвертное целое число: ");
+   int x4=input.nextInt();
+   System.out.println("Введите пятое целое число: ");
+   int x5=input.nextInt();
+
+  int result=Sum(x1,x2,x3,x4,x5);
+  System.out.println("Сумма:" + result);
+//Поиск наибольшего числа
+  int max=0;
+  int []array={x1,x2,x3,x4,x5};
+  for(int i=0;i<5;i++)
+  {
+      if(array[i]>max)
+          max=array[i];
+  }
+  System.out.println("Наибольшее число: " + max);
+
+  int min=array[0];
+  //Поиск наименьшего числа
+  for(int i=0;i<5;i++)
+        {
+            if(array[i]<min)
+                min=array[i];
+        }
+        System.out.println("Наименьшее число: " + min);
+
+    }
+    }
