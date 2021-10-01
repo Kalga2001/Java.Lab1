@@ -1,0 +1,29 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static int Sum(int x, int y, int z)
+    {
+        return x+y+z;
+    }
+    public static void main(String[] args) {
+   Scanner input=new Scanner(System.in);
+   System.out.println("Введите первое целое число: ");
+   int x=input.nextInt();
+   System.out.println("Введите второе целое число: ");
+   int y=input.nextInt();
+   System.out.println("Введите третье целое число: ");
+   int z=input.nextInt();
+  if(x>y && x>z && y>z) System.out.println( "Наибольшее число: " + x + " Наименьшее число: "+ z);
+  if(x>y && x>y && y<z) System.out.println( "Наибольшее число: " + x + " Наименьшее число: "+ y);
+  if(y>x && x>z && y>z) System.out.println( "Наибольшее число: " + y + " Наименьшее число: "+ z);
+  if(y>x && z>x && y>z) System.out.println( "Наибольшее число: " + y + " Наименьшее число: "+ x);
+  if(z>y && z>x && x>y) System.out.println( "Наибольшее число: " + z + " Наименьшее число: "+ y);
+  if(z>y && z>x && y>x) System.out.println( "Наибольшее число: " + z + " Наименьшее число: "+ x);
+  if(x==y) System.out.println(x+ " равно "+ y );
+  int result=Sum(x,y,z);
+  System.out.println("Сумма:" + result);
+  int averrage=result/3;
+  System.out.println("Среднее значение: " + averrage);
+    }
+    }
+
